@@ -1,0 +1,791 @@
+li{
+	list-style: none;
+}
+
+/* 轮播图部分 */
+.carousel-indicators li{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 20px;
+  position: relative;
+  border: none;
+  background: #fff;
+}
+.carousel-indicators li.active{
+	background-color: #D9232E;
+	box-shadow: 0px 0px 0px 10px rgba(218, 149, 142, .90);
+}
+.carousel-indicators li>.dashed-line{
+	position: absolute;
+	left: 15px;
+	top:3px;
+	width: 30px;
+	border-bottom: 1px dashed rgba(255, 255, 255, .8);
+}
+/* 轮播图部分 end */
+
+
+
+
+
+
+/* 优选好品部分 */
+.h1-title{
+    position: relative;
+    z-index: 2;
+  }
+
+  .h1-title>span{
+    background-color: #fff;
+    padding: 0 25px;
+  }
+
+.title-line{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 1px;
+    background-color: #aaa;
+    z-index: 1;
+}
+
+.icon-img{
+	width: 26px;
+	height:23px;
+	margin: 0 auto;
+}
+.icon-img>img{
+	height: 23px;
+}
+.icon-text{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.icon-line{
+  width: 26px;
+  height: 3px;
+  background-color: #D9232E;
+  margin: 0 auto;
+  display: none;
+}
+.img-active{
+	display:none;
+}
+
+.icon-active>.img-noactive{
+	display: none;
+}
+.icon-active>.img-active{
+	display:block;
+}
+.icon-active{
+	color: #D9232E;
+}
+.icon-active>.icon-line{
+	display:block;
+}
+
+.pro-content-h3{
+	font-size:22px;
+}
+
+.pro-info{
+	/* width: 200px; */
+	height: 48px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size:16px;
+}
+
+
+/* .icon-list:hover .img-noactive{
+	display: none;
+}
+.icon-list:hover .img-active{
+	display:block;
+}
+
+.icon-list:hover .icon-text{
+	color: #D9232E;
+}
+.icon-list:hover .icon-line{
+	display:block;
+}
+.pro-content{
+  padding: 20px;
+} */
+
+/* 优选好品部分 end */
+
+
+/* 新闻 */
+.news-title{
+  margin-top: 15px;
+}
+
+.news-title:hover{
+  color: #D9232E;
+}
+
+.one-text{
+/* 文本不换行 */
+	white-space: nowrap;
+	overflow: hidden;
+	/* 超出的文本用省略号代替 */
+	text-overflow: ellipsis;
+}
+
+.news-main{
+	color: #888;
+	font-size: 13px;
+}
+.investment-btn:hover .btn-img1{
+	display: none;
+}
+.investment-btn:hover .btn-img2{
+	display: block;
+}
+/* 新闻 end*/
+
+.footer-line{
+  height: 2px;
+  background-color: #000;
+}
+
+
+
+
+/* pc端 */
+@media screen and (min-width:1200px){
+	.box{
+		width:1200px
+	}
+	.line{
+		height: 3px;
+		background-color: #d9232e ;
+	}
+	
+	.search-box{
+		height: 30px;
+		margin-top: 30px;
+		cursor: pointer;	
+	}
+	.menu-box{
+		/* height: 30px; */
+		border-bottom: 1px solid #999999;
+		position: relative;
+	}
+	.menu-text{
+		float: left;
+		width: 70px;
+		height: 30px;
+		color: #666;
+		font-size:12px;
+		line-height: 30px;
+		text-indent: 16px;
+	}	
+	.menu-icon{
+		margin-top:11px;
+		float: left;
+		width: 8px;
+		height: 5px;
+		background: url(../img/rednext.png) no-repeat center center;
+	}
+	.searching-icon{
+		width: 12px;
+		height: 13px;
+		background: url(../img/sousuo.jpg) no-repeat center center;
+		margin-top: 8.5px;
+		margin-left: 20px;
+	}
+	
+	.nav-list{
+		width:110px;
+		position: absolute;
+		top: 30px;
+		left: 0px;
+		text-indent: 16px;
+		font-size: 12px;
+		display: none;
+		color: #666;
+		z-index: 2;
+		background-color: #fff;
+	}
+	.nav-list>div{
+		margin-bottom: 10px;
+	}
+	.menu-box:hover .nav-list{
+		display: block;
+	}
+	.nav-list>div:hover{
+		color: #f00;
+	}
+	
+	/*内容盒子清除浮动 */
+	.content-box{
+	  clear: right;
+	}
+	
+	/* logo部分 */
+	.logo{
+	 width: 61px;
+	 margin-top: -20px;
+	}
+	
+	.content>li{
+		float: left;
+		margin-left: 50px;
+		/* border-bottom: 1px solid #DC3545; */
+		line-height:55px;
+		position: relative;
+	}
+	.content>li:first-child{
+		margin-left:0px;
+	}
+	.liactive{
+		color: #C82333;
+	}
+	.content>li.liactive>.i{
+		display: block;
+	}
+	.i{
+	/* display: block; */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #D9232E;
+	display: none;
+	}
+	
+	.content>li:hover .i{
+		display:block;
+	}
+	.carousel-inner{
+		margin-top:-10px;
+	}
+	
+	.md-box,.m-box{
+		display: none;
+	}
+
+		/* 品牌简介所在的内容部分 */
+	.b-content{
+		margin-top: 15px;
+	}
+	.brand-img{
+		height: 700px;
+		background: url(../img/brandconcept.jpg) no-repeat center center;
+		background-size: cover;
+		position: relative;
+	}
+	.brand-title{
+		font-size: 48px;
+		color: #fff;
+		line-height: 76px;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+	.brand-img:hover .brand-title{
+		color: #D9232E;
+	}
+
+	.investment{
+		height: 340px;
+		border: 1px solid #ccc;
+	}
+	.investment-title{
+		font-size: 48px;
+		color: #222;
+		margin-top: 76px;
+	}
+	.intro{
+		width: 293px;
+		margin:20px auto;
+		font-size: 14px;
+	}
+	.investment-btn{
+		width: 178px;
+		margin: 40px auto;
+	}
+	.btn-img2{
+		display: none;
+	}
+	.investment:hover .btn-img1{
+		display: none;
+	}
+	.investment:hover .btn-img2{
+		display:block;
+	}
+
+	.would{
+		height: 340px;
+		margin-top: 20px;
+		background: url(../img/distributor.jpg) no-repeat center center;
+		position: relative;
+	}
+	.would-text{
+		width: 300px;
+		height: 80px;
+		font-size: 48px;
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		top: 0px;
+		margin: auto;
+		line-height: 74px;
+		text-align: center;
+		border-bottom: 3px solid #fff;
+		border-top: 3px solid #fff;
+		color: #fff;
+	}
+	.would:hover .would-text{	
+		color: #D9232E;
+		border-color: #D9232E;
+	}
+	/* 品牌简介所在的内容部分 end */
+
+
+
+	
+}
+
+
+/* 平板 */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	
+	.line,.search-box,.content-box{
+		display: none;
+	}
+	.m-box{
+		display: none;
+	}
+	
+	.md-content{
+		position: relative;
+		z-index: 2;
+	}
+	
+	/* 平板logo部分 */
+	.md-logo>img{
+		width:33px;
+		margin-top:6px;
+	}
+	/* 平板logo部分end */
+	
+	
+	/* 中间导航栏部分 */
+	.md-title{
+		position: absolute;
+		left: 50%;
+		margin-left: -236px;
+		margin-top: -10px;
+	}
+	
+	.content>li{
+		float: left;
+		margin-right: 40px;
+		/* border-bottom: 1px solid #DC3545; */
+		line-height:55px;
+		position: relative;
+	}
+	.content>li:first-child{
+		margin-left:0px;
+	}
+	.liactive{
+		color: #C82333;
+	}
+	.content>li.liactive>.i{
+		display: block;
+	}
+	.i{
+	/* display: block; */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #D9232E;
+	display: none;
+	}
+	
+	.content>li:hover .i{
+		display:block;
+	}
+	/* 中间导航栏部分 end */
+
+
+	/* 平板右边部分 */
+	.md-search-box{
+		height: 30px;
+		/* margin-top: 30px; */
+		cursor: pointer;	
+	}
+	.menu-box{
+		/* height: 30px; */
+		border-bottom: 1px solid #999999;
+		position: relative;
+	}
+	.menu-text{
+		float: left;
+		width: 70px;
+		height: 30px;
+		color: #666;
+		font-size:12px;
+		line-height: 30px;
+		text-indent: 16px;
+	}	
+	.menu-icon{
+		margin-top:11px;
+		float: left;
+		width: 8px;
+		height: 5px;
+		background: url(../img/rednext.png) no-repeat center center;
+	}
+	.searching-icon{
+		width: 12px;
+		height: 13px;
+		background: url(../img/sousuo.jpg) no-repeat center center;
+		margin-top: 8.5px;
+		margin-left: 20px;
+	}
+	
+	.nav-list{
+		width:110px;
+		position: absolute;
+		top: 30px;
+		left: 0px;
+		text-indent: 16px;
+		font-size: 12px;
+		display: none;
+		color: #666;
+		z-index: 2;
+		background-color: #fff;
+	}
+	.nav-list>div{
+		margin-bottom: 10px;
+	}
+	.md-search-box:hover .nav-list{
+		display: block;
+	}
+	.nav-list>div:hover{
+		color: #f00;
+	}
+	/* 平板右边部分 end */
+	
+	/* #carousel-inner{
+		margin-top: 100px;
+		position: absolute;
+		top: 50px;
+	} */
+	.carousel-inner{
+		margin-top:-10px;
+	}
+
+
+
+	/* 品牌简介所在的内容部分 */
+	.b-content{
+		margin-top: 15px;
+	}
+	.brand-img{
+		height:580px;
+		background: url(../img/brandconcept.jpg) no-repeat center center;
+		background-size: cover;
+		position: relative;
+	}
+	.brand-title{
+		font-size: 48px;
+		color: #fff;
+		line-height: 76px;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+	.brand-img:hover .brand-title{
+		color: #D9232E;
+	}
+
+	.investment{
+		height: 280px;
+		border: 1px solid #ccc;
+	}
+	.investment-title{
+		font-size:20px;
+		color: #222;
+		margin-top: 76px;
+	}
+	.btn-img1>img,.btn-img2>img{
+		width: 150px;
+	}
+
+	.intro{
+		width:280px;
+		margin:20px auto;
+		font-size: 14px;
+	}
+	.investment-btn{
+		width: 178px;
+		margin: 40px auto;
+	}
+	.btn-img2{
+		display: none;
+	}
+	.investment:hover .btn-img1{
+		display: none;
+	}
+	.investment:hover .btn-img2{
+		display:block;
+	}
+
+	.would{
+		height:280px;
+		margin-top: 20px;
+		background: url(../img/distributor.jpg) no-repeat center center;
+		position: relative;
+	}
+	.would-text{
+		width:250px;
+		height:60px;
+		font-size:30px;
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		top: 0px;
+		margin: auto;
+		line-height:56px;
+		text-align: center;
+		border-bottom: 2px solid #fff;
+		border-top: 2px solid #fff;
+		color: #fff;
+	}
+	.would:hover .would-text{	
+		color: #D9232E;
+		border-color: #D9232E;
+	}
+	/* 品牌简介所在的内容部分 end */
+
+
+
+}
+/* 平板 end */
+
+
+
+
+
+/* 手机端 */
+@media screen and (max-width: 768px) {
+	.line,.search-box,.content-box{
+		display: none;
+	}
+	.md-box{
+		display: none;
+	}
+	
+	.m-box{
+		padding: 0px 15px;
+	}
+	
+	.sm-logo{
+		width:50px;
+		
+	}
+	.right-icon{
+		margin-top: 13.5px;
+	}
+	.right-icon>div{
+		float: left;
+		/* background-color: #000; */
+		margin-left: 15px;
+	}
+	.coll{
+		width: 35px;
+		height: 29px;
+		background:url(../img/ph_nav.png) no-repeat center center;
+	}
+	.sousuo{
+		width: 32px;
+		height: 34px;
+		background: url(../img/blacksearch.png) no-repeat center center;
+	}
+	
+	.icon-would{
+		width: 32px;
+		height: 32px;
+		background: url(../img/world.png) no-repeat center center;
+		background-size: 32px 32px;
+		margin-top: 0px;
+	}
+	.m-box-content{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, .5);
+		display: none;
+		z-index:2;
+	}
+	.close-box{
+		height: 76px;
+	}
+	.close-img{
+    width: 27px;
+    height: 28px;
+    background:url(../img/close.png) no-repeat center center;
+    margin-right: 115px;
+    margin-top: 15px;
+   }
+
+   .m-list-box{
+    background-color: #D9232E;
+   }
+
+   .m-list-box>li{
+    padding: 0 15px;
+    position: relative;
+   }
+
+  .m-list-box>li>div:not(.m-c){
+    padding: 15px 0;
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  .m-list-box>li:hover>.m-c{
+    display: block;
+  }
+  .m-c{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -1px;
+    background-color: #fff;
+    padding: 15px;
+    display: none;
+  }
+
+	.m-c>div{
+		padding: 15px 0;
+		cursor: pointer;
+		font-size: 20px;
+	}
+
+	.m-c>div:hover{
+    color: #D9232E;
+	}
+	.coll:hover .m-box-content{
+		display: block;
+	} 
+
+
+
+	
+
+
+	/* 品牌简介所在的内容部分 */
+	.b-content{
+		margin-top: 15px;
+	}
+	.brand-img{
+		width:300px;
+		/* height:350px; */
+		/* background: url(../img/brandconcept.jpg) no-repeat center center;
+		background-size: cover; */
+		position: relative;
+		/* float: left; */
+	}
+	.brand-img>img{
+		width: 100%;
+	}
+	.brand-title{
+		font-size:30px;
+		color: #fff;
+		line-height: 76px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	.brand-img:hover .brand-title{
+		color: #D9232E;
+	}
+
+	.investment{
+		/* width:300 px; */
+		height:350px;
+		border: 1px solid #ccc;
+		float: right;
+		position: absolute;
+		top: -350px;
+		right: 0px;
+	}
+	.investment-title{
+		font-size:20px;
+		color: #222;
+		margin-top: 76px;
+	}
+	.btn-img1>img,.btn-img2>img{
+		width: 150px;
+	}
+
+	.intro{
+		width:280px;
+		margin:20px auto;
+		font-size: 14px;
+	}
+	.investment-btn{
+		width: 178px;
+		margin: 40px auto;
+	}
+	.btn-img2{
+		display: none;
+	}
+	.investment:hover .btn-img1{
+		display: none;
+	}
+	.investment:hover .btn-img2{
+		display:block;
+	}
+
+	.would{
+		/* width: 610px; */
+		height:300px;
+		margin-top: 20px;
+		background: url(../img/distributor.jpg) no-repeat center center;
+		position: relative;
+	}
+	.would-text{
+		width:250px;
+		height:60px;
+		font-size:30px;
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		top: 0px;
+		margin: auto;
+		line-height:56px;
+		text-align: center;
+		border-bottom: 2px solid #fff;
+		border-top: 2px solid #fff;
+		color: #fff;
+	}
+	.would:hover .would-text{	
+		color: #D9232E;
+		border-color: #D9232E;
+	}
+	/* 品牌简介所在的内容部分 end */
+
+	
+}
+/* 手机端 end */
